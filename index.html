@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Johan Karjadi · Software Engineer</title>
+  <meta name="description" content="Johan Karjadi is a software engineer in New Zealand. Projects include The Prompt Folio, an SDLC cheatsheet, Rat Race Escape, and UI UX Pro Max references.">
+  <link rel="canonical" href="https://rimkahan888.github.io/">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#101412">
+  <meta property="og:title" content="Johan Karjadi · Software Engineer">
+  <meta property="og:description" content="Johan Karjadi is a software engineer in New Zealand. Projects include The Prompt Folio, an SDLC cheatsheet, Rat Race Escape, and UI UX Pro Max references.">
+  <meta property="og:url" content="https://rimkahan888.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Johan Karjadi · Software Engineer">
+  <meta name="twitter:description" content="Johan Karjadi is a software engineer in New Zealand. Projects include The Prompt Folio, an SDLC cheatsheet, Rat Race Escape, and UI UX Pro Max references.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231A221E'/%3E%3Ctext x='16' y='21' text-anchor='middle' font-family='Georgia,serif' font-size='13' font-weight='700' fill='%23F4F7F5'%3EJK%3C/text%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&amp;family=Raleway:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var root = document.documentElement;
+      try {
+        var theme = localStorage.getItem("jk-theme");
+        root.setAttribute("data-theme", theme === "light" ? "light" : "dark");
+        var card = Number(localStorage.getItem("jk-card-size"));
+        if (card >= 80 && card <= 140) root.style.setProperty("--card-scale", String(card / 100));
+        var panel = Number(localStorage.getItem("jk-panel-size"));
+        if (panel >= 30 && panel <= 70) {
+          root.style.setProperty("--panel-size", panel + "%");
+          root.style.setProperty("--panel-h", panel + "dvh");
+        }
+      } catch (error) {
+        root.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-github" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.56 9.56 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/>
+    </symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+        <circle cx="12" cy="12" r="4"/>
+        <path d="M12 3v1.8M12 19.2V21M4.9 4.9l1.3 1.3M17.8 17.8l1.3 1.3M3 12h1.8M19.2 12H21M4.9 19.1l1.3-1.3M17.8 6.2l1.3-1.3"/>
+      </g>
+    </symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" d="M16 3.5a8.2 8.2 0 1 0 4.6 14.8A7 7 0 0 1 16 3.5z"/>
+    </symbol>
+    <symbol id="i-help" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M9.2 9.1a2.8 2.8 0 1 1 3.7 2.6c-.8.35-1.2.9-1.2 1.7V14.2"/>
+        <path d="M12 17.2h.01"/>
+      </g>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M7 7l10 10M17 7 7 17"/>
+    </symbol>
+    <symbol id="i-external" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M14 5h5v5"/>
+        <path d="M19 5l-8 8"/>
+        <path d="M10 6H6v12h12v-4"/>
+      </g>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5 9.2 16.7 19 7.5"/>
+    </symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4.5 20.5 19h-17L12 4.5z"/>
+        <path d="M12 10v4.2"/>
+        <path d="M12 16.8h.01"/>
+      </g>
+    </symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round">
+        <rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/>
+        <rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/>
+        <rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/>
+        <rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>
+      </g>
+    </symbol>
+    <symbol id="i-panel" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round">
+        <rect x="3.5" y="4.5" width="17" height="15" rx="2"/>
+        <path d="M13 4.5v15"/>
+      </g>
+    </symbol>
+    <symbol id="i-prompt" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round" stroke-linecap="round">
+        <rect x="3.5" y="5" width="17" height="14" rx="2"/>
+        <path d="M7.5 15.2 10 12l2.2 2.1 2.3-2.6 2 3.7"/>
+      </g>
+    </symbol>
+    <symbol id="i-flow" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+        <circle cx="6" cy="12" r="2.2"/>
+        <circle cx="12" cy="7" r="2.2"/>
+        <circle cx="18" cy="14" r="2.2"/>
+        <path d="M8 11.2 10.2 8.4M13.6 8.6 16.2 12.4"/>
+      </g>
+    </symbol>
+    <symbol id="i-board" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round">
+        <rect x="4" y="4" width="16" height="16" rx="2"/>
+        <path d="M4 9.3h16M4 14.7h16M9.3 4v16M14.7 4v16"/>
+      </g>
+    </symbol>
+    <symbol id="i-swatch" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75">
+        <circle cx="9" cy="10" r="3.4"/>
+        <circle cx="15" cy="10" r="3.4"/>
+        <circle cx="12" cy="14.5" r="3.4"/>
+      </g>
+    </symbol>
+    <symbol id="i-code" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M8.5 8 4.5 12l4 4M15.5 8l4 4-4 4M13.2 6.5 10.8 17.5"/>
+    </symbol>
+    <symbol id="i-component" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round">
+        <path d="M12 3.5 19.5 8v8L12 20.5 4.5 16V8L12 3.5z"/>
+        <path d="M4.5 8 12 12.2 19.5 8"/>
+        <path d="M12 12.2V20.5"/>
+      </g>
+    </symbol>
+    <symbol id="i-hash" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M9.2 4.5 7.6 19.5M16.4 4.5 14.8 19.5M4.8 9h14.2M4.2 15h14.2"/>
+    </symbol>
+    <symbol id="i-actions" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round">
+        <circle cx="5.5" cy="12" r="2"/>
+        <circle cx="12" cy="12" r="2"/>
+        <circle cx="18.5" cy="12" r="2"/>
+        <path d="M7.5 12h2.5M14 12h2.5"/>
+      </g>
+    </symbol>
+    <symbol id="i-slabs" viewBox="0 0 24 24">
+      <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linejoin="round">
+        <path d="M4 8.5 8 6.5h12l-4 2z"/>
+        <path d="M4 13 8 11h12l-4 2z"/>
+        <path d="M4 17.5 8 15.5h12l-4 2z"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <div class="app" id="app">
+    <div class="stage">
+      <div class="wrap">
+        <header class="hero">
+          <div class="hero-top">
+            <div class="brand">
+              <span class="monogram" aria-hidden="true">JK</span>
+              <div>
+                <h1>Johan Karjadi</h1>
+                <p class="role">Software Engineer</p>
+              </div>
+            </div>
+            <div class="icon-row">
+              <a class="icon-btn" href="https://github.com/rimkahan888" aria-label="GitHub profile, opens in a new tab" target="_blank" rel="me noopener noreferrer">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"></use></svg>
+              </a>
+              <button class="icon-btn" id="theme-toggle" type="button" aria-pressed="true" aria-label="Switch to light theme">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sun"></use></svg>
+              </button>
+              <button class="icon-btn" id="help-open" type="button" aria-label="Keyboard shortcuts" aria-keyshortcuts="?">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-help"></use></svg>
+              </button>
+            </div>
+          </div>
+          <!-- EDIT BIO: Replace the sentence in the paragraph below. Keep it short.
+               Do not add email, phone, address, LinkedIn, or any contact besides the GitHub link. -->
+          <p class="hero-intro">Based in New Zealand, with two years of working experience.</p>
+
+          <div class="controls">
+            <label class="slider">
+              <span class="slider-name">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cards"></use></svg>
+                <span>Cards</span>
+                <span class="slider-value" id="card-size-value" aria-hidden="true">100%</span>
+              </span>
+              <input id="card-size" type="range" min="80" max="140" step="1" value="100" aria-label="Card size" aria-valuemin="80" aria-valuemax="140" aria-valuenow="100">
+            </label>
+            <label class="slider">
+              <span class="slider-name">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-panel"></use></svg>
+                <span>Panel</span>
+                <span class="slider-value" id="panel-size-value" aria-hidden="true">50%</span>
+              </span>
+              <input id="panel-size" type="range" min="30" max="70" step="1" value="50" aria-label="Detail panel size" aria-valuemin="30" aria-valuemax="70" aria-valuenow="50">
+            </label>
+          </div>
+        </header>
+
+        <main id="main">
+          <section class="section" id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <noscript>
+              <p>JavaScript is off, so the project cards cannot load. They are listed in <code>js/projects.js</code>.</p>
+            </noscript>
+            <ul class="bento" id="project-list"></ul>
+          </section>
+
+          <section class="section" id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul class="skills">
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-code"></use></svg>
+                <span>HTML, CSS, JS</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-component"></use></svg>
+                <span>Vue</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-hash"></use></svg>
+                <span>C# / .NET</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-actions"></use></svg>
+                <span>GitHub Actions</span>
+              </li>
+              <li>
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-slabs"></use></svg>
+                <span>Terraform</span>
+                <span class="study">Studying</span>
+              </li>
+            </ul>
+          </section>
+        </main>
+
+        <footer>
+          <p>Johan Karjadi · New Zealand</p>
+          <a class="icon-btn" href="https://github.com/rimkahan888" aria-label="GitHub profile, opens in a new tab" target="_blank" rel="me noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"></use></svg>
+          </a>
+        </footer>
+      </div>
+    </div>
+
+    <aside class="panel" id="panel" role="dialog" aria-modal="false" aria-hidden="true" aria-labelledby="panel-title" inert>
+      <div class="panel-inner">
+        <div class="panel-bar">
+          <div>
+            <p class="eyebrow">Project</p>
+            <h2 id="panel-title"></h2>
+          </div>
+          <button class="icon-btn" id="panel-close" type="button" aria-label="Close project details">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+          </button>
+        </div>
+        <div class="panel-body">
+          <p id="panel-detail"></p>
+          <ul class="tags" id="panel-tags"></ul>
+          <div class="panel-links" id="panel-links"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="toast-stack" aria-live="polite">
+    <div class="toast toast-ok" id="toast-ok" hidden>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"></use></svg>
+      <span id="toast-ok-text"></span>
+    </div>
+  </div>
+  <div class="toast-stack" aria-live="assertive">
+    <div class="toast toast-err" id="toast-err" role="alert" hidden>
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-alert"></use></svg>
+      <span id="toast-err-text"></span>
+    </div>
+  </div>
+
+  <dialog class="help" id="help" aria-labelledby="help-title">
+    <div class="help-bar">
+      <h2 id="help-title">Shortcuts</h2>
+      <button class="icon-btn" id="help-close" type="button" aria-label="Close shortcuts">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-close"></use></svg>
+      </button>
+    </div>
+    <ul class="shortcut-list">
+      <li><span><kbd>J</kbd> <kbd>↓</kbd> <kbd>→</kbd></span> Next card</li>
+      <li><span><kbd>K</kbd> <kbd>↑</kbd> <kbd>←</kbd></span> Previous card</li>
+      <li><span><kbd>Enter</kbd></span> Open the focused card</li>
+      <li><span><kbd>Esc</kbd></span> Close the panel or this list</li>
+      <li><span><kbd>T</kbd></span> Light or dark theme</li>
+      <li><span><kbd>?</kbd></span> Show or hide this list</li>
+      <li><span>Double-click</span> Copy the card as text</li>
+    </ul>
+  </dialog>
+
+  <script src="js/projects.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
