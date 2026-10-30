@@ -278,6 +278,10 @@ h1 {
   touch-action: manipulation;
 }
 
+#card-size {
+  --fill: 33%;
+}
+
 .slider input[type="range"]::-webkit-slider-runnable-track {
   height: 4px;
   border-radius: 999px;
