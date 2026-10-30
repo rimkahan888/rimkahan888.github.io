@@ -100,13 +100,25 @@
     input.setAttribute("aria-valuenow", input.value);
   }
 
+  var cardScaleMin = 80;
+  var cardScaleMax = 140;
+
+  function cardScaleFromPercent(percent) {
+    return cardScaleMin + (Number(percent) / 100) * (cardScaleMax - cardScaleMin);
+  }
+
+  function cardPercentFromScale(size) {
+    return ((Number(size) - cardScaleMin) / (cardScaleMax - cardScaleMin)) * 100;
+  }
+
   function applyCardSize(value, persist) {
-    var size = Math.min(140, Math.max(80, Number(value)));
-    document.documentElement.style.setProperty("--card-scale", String(size / 100));
-    cardSlider.value = String(size);
-    cardValue.textContent = size + "%";
+    var scale = Math.min(cardScaleMax, Math.max(cardScaleMin, Number(value)));
+    document.documentElement.style.setProperty("--card-scale", String(scale / 100));
+    var shown = Math.round(cardPercentFromScale(scale));
+    if (Number(cardSlider.value) !== shown) cardSlider.value = String(shown);
+    cardValue.textContent = cardSlider.value + "%";
     paintSlider(cardSlider);
-    if (persist) store("jk-card-size", String(size));
+    if (persist) store("jk-card-size", String(Math.round(scale * 10) / 10));
   }
 
   function applyPanelSize(value, persist) {
@@ -480,7 +492,7 @@
 
   cardSlider.addEventListener("input", function () {
     markResizing();
-    applyCardSize(cardSlider.value, true);
+    applyCardSize(cardScaleFromPercent(cardSlider.value), true);
   });
   panelSlider.addEventListener("input", function () {
     markResizing();
@@ -546,7 +558,7 @@
   });
 
   render();
-  applyCardSize(readNumber("jk-card-size", 100, 80, 140), false);
+  applyCardSize(readNumber("jk-card-size", 100, cardScaleMin, cardScaleMax), false);
   applyPanelSize(readNumber("jk-panel-size", 50, 30, 70), false);
   setTheme(document.documentElement.getAttribute("data-theme"));
 
